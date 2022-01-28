@@ -8,10 +8,10 @@ using System.Windows.Forms;
 
 namespace KartSkills
 {
-    public partial class NewRacer : Form
+    public partial class RegistrationEnd : Form
     {
         DateTime DateOfStart = new DateTime(2022, 11, 24, 6, 0, 0);
-        public NewRacer()
+        public RegistrationEnd()
         {
             InitializeComponent();
         }
@@ -22,22 +22,15 @@ namespace KartSkills
             TimerLabel.Text = $"До начала события осталось {different.Days} дней, {different.Hours} часов, {different.Minutes} минут и {different.Seconds} секунд.";
         }
 
-        private void buttonBack_Click(object sender, EventArgs e)
+        private void buttonOK_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-        private void buttonYes_Click(object sender, EventArgs e)
+        private void buttoLogOut_Click(object sender, EventArgs e)
         {
-            buttonLogin login = new buttonLogin();
-            login.Show();
-            Close();
-        }
-
-        private void buttonNo_Click(object sender, EventArgs e)
-        {
-            RegRacer reg = new RegRacer();
-            reg.Show();
+            MenuRacers menu = new MenuRacers();
+            menu.Show();
             Close();
         }
     }

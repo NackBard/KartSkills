@@ -8,11 +8,11 @@ using System.Windows.Forms;
 
 namespace KartSkills
 {
-    public partial class RegRacer : Form
+    public partial class RacerRagistration : Form
     {
         string img = "";
         DateTime DateOfStart = new DateTime(2022, 11, 24, 6, 0, 0);
-        public RegRacer()
+        public RacerRagistration()
         {
             InitializeComponent();
         }
@@ -35,7 +35,7 @@ namespace KartSkills
 
         private void buttonReg_Click(object sender, EventArgs e)
         {
-            RegRace race = new RegRace();
+            RaceRegistration race = new RaceRegistration();
             race.Show();
             Close();
         }

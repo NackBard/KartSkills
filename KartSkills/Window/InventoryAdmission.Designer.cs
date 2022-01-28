@@ -1,7 +1,7 @@
 ﻿
 namespace KartSkills
 {
-    partial class AdmissionInv
+    partial class InventoryAdmission
     {
         /// <summary>
         /// Required designer variable.

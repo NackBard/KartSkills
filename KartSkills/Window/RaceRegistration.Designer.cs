@@ -1,7 +1,7 @@
 ﻿
 namespace KartSkills
 {
-    partial class RegRace
+    partial class RaceRegistration
     {
         /// <summary>
         /// Required designer variable.

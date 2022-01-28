@@ -1,7 +1,7 @@
 ﻿
 namespace KartSkills
 {
-    partial class ThankReg
+    partial class RegistrationEnd
     {
         /// <summary>
         /// Required designer variable.

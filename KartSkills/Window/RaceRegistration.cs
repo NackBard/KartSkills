@@ -8,10 +8,10 @@ using System.Windows.Forms;
 
 namespace KartSkills
 {
-    public partial class MenuRacers : Form
+    public partial class RaceRegistration : Form
     {
         DateTime DateOfStart = new DateTime(2022, 11, 24, 6, 0, 0);
-        public MenuRacers()
+        public RaceRegistration()
         {
             InitializeComponent();
         }
@@ -27,40 +27,25 @@ namespace KartSkills
             Close();
         }
 
-        private void buttonRegRacer_Click(object sender, EventArgs e)
+        private void buttonBack_Click(object sender, EventArgs e)
         {
-            RegRace race = new RegRace();
-            race.Show();
+            MenuRacers menu = new MenuRacers();
+            menu.Show();
             Close();
         }
 
-        private void buttonEditProfile_Click(object sender, EventArgs e)
+        private void buttonCancel_Click(object sender, EventArgs e)
         {
-            EditProfile edit = new EditProfile();
-            edit.Show();
+            MenuRacers menu = new MenuRacers();
+            menu.Show();
             Close();
         }
 
-        private void buttonContacts_Click(object sender, EventArgs e)
+        private void buttonReg_Click(object sender, EventArgs e)
         {
-            panelContacts.Visible = true;
-        }
-
-        private void pictureBoxClose_Click(object sender, EventArgs e)
-        {
-            panelContacts.Visible = false;
-        }
-
-        private void buttonMyResults_Click(object sender, EventArgs e)
-        {
-            MyResults result = new MyResults();
-            result.Show();
+            RegistrationEnd reg = new RegistrationEnd();
+            reg.Show();
             Close();
-        }
-
-        private void buttonMySponsor_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
