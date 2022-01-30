@@ -30,7 +30,6 @@ namespace KartSkills
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.TimerLabel = new System.Windows.Forms.Label();
             this.dataGridTimer = new System.Windows.Forms.DataGridView();
             this.labelCity = new System.Windows.Forms.Label();
             this.labelKartName = new System.Windows.Forms.Label();
@@ -62,20 +61,10 @@ namespace KartSkills
             this.maskedTextBoxCVC = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBoxNumberCard = new System.Windows.Forms.MaskedTextBox();
             this.comboBoxFund = new System.Windows.Forms.ComboBox();
+            this.TimerLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridTimer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataKartName)).BeginInit();
             this.SuspendLayout();
-            // 
-            // TimerLabel
-            // 
-            this.TimerLabel.AutoSize = true;
-            this.TimerLabel.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.TimerLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TimerLabel.Location = new System.Drawing.Point(143, 530);
-            this.TimerLabel.Name = "TimerLabel";
-            this.TimerLabel.Size = new System.Drawing.Size(61, 22);
-            this.TimerLabel.TabIndex = 18;
-            this.TimerLabel.Text = "label3";
             // 
             // dataGridTimer
             // 
@@ -423,11 +412,25 @@ namespace KartSkills
             this.comboBoxFund.Size = new System.Drawing.Size(206, 30);
             this.comboBoxFund.TabIndex = 50;
             // 
+            // TimerLabel
+            // 
+            this.TimerLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TimerLabel.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.TimerLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TimerLabel.Location = new System.Drawing.Point(12, 530);
+            this.TimerLabel.Name = "TimerLabel";
+            this.TimerLabel.Size = new System.Drawing.Size(860, 22);
+            this.TimerLabel.TabIndex = 51;
+            this.TimerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // SponsorRacer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 561);
+            this.Controls.Add(this.TimerLabel);
             this.Controls.Add(this.comboBoxFund);
             this.Controls.Add(this.maskedTextBoxNumberCard);
             this.Controls.Add(this.maskedTextBoxCVC);
@@ -454,7 +457,6 @@ namespace KartSkills
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonBack);
-            this.Controls.Add(this.TimerLabel);
             this.Controls.Add(this.dataGridTimer);
             this.Controls.Add(this.labelCity);
             this.Controls.Add(this.labelKartName);
@@ -469,8 +471,6 @@ namespace KartSkills
         }
 
         #endregion
-
-        private System.Windows.Forms.Label TimerLabel;
         private System.Windows.Forms.DataGridView dataGridTimer;
         private System.Windows.Forms.Label labelCity;
         private System.Windows.Forms.Label labelKartName;
@@ -502,5 +502,6 @@ namespace KartSkills
         private System.Windows.Forms.MaskedTextBox maskedTextBoxCVC;
         private System.Windows.Forms.MaskedTextBox maskedTextBoxNumberCard;
         private System.Windows.Forms.ComboBox comboBoxFund;
+        private System.Windows.Forms.Label TimerLabel;
     }
 }

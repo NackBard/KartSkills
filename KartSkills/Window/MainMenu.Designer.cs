@@ -200,13 +200,16 @@ namespace KartSkills
             // 
             // TimerLabel
             // 
-            this.TimerLabel.AutoSize = true;
+            this.TimerLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.TimerLabel.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.TimerLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TimerLabel.Location = new System.Drawing.Point(143, 530);
+            this.TimerLabel.Location = new System.Drawing.Point(12, 530);
             this.TimerLabel.Name = "TimerLabel";
-            this.TimerLabel.Size = new System.Drawing.Size(0, 22);
+            this.TimerLabel.Size = new System.Drawing.Size(860, 22);
             this.TimerLabel.TabIndex = 23;
+            this.TimerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dataGridView1
             // 

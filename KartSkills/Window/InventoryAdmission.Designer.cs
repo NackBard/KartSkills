@@ -35,7 +35,6 @@ namespace KartSkills
             this.TimerStart = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.buttonSave = new System.Windows.Forms.Button();
-            this.TimerLabel = new System.Windows.Forms.Label();
             this.dataGridTimer = new System.Windows.Forms.DataGridView();
             this.labelCity = new System.Windows.Forms.Label();
             this.labelKartName = new System.Windows.Forms.Label();
@@ -49,6 +48,7 @@ namespace KartSkills
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.buttonCancel = new System.Windows.Forms.Button();
+            this.TimerLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridTimer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataKartName)).BeginInit();
             this.SuspendLayout();
@@ -109,17 +109,6 @@ namespace KartSkills
             this.buttonSave.Text = "Сохранить";
             this.buttonSave.UseVisualStyleBackColor = false;
             this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
-            // 
-            // TimerLabel
-            // 
-            this.TimerLabel.AutoSize = true;
-            this.TimerLabel.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.TimerLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TimerLabel.Location = new System.Drawing.Point(143, 530);
-            this.TimerLabel.Name = "TimerLabel";
-            this.TimerLabel.Size = new System.Drawing.Size(61, 22);
-            this.TimerLabel.TabIndex = 132;
-            this.TimerLabel.Text = "label3";
             // 
             // dataGridTimer
             // 
@@ -272,11 +261,25 @@ namespace KartSkills
             this.buttonCancel.UseVisualStyleBackColor = false;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
-            // AdmissionInv
+            // TimerLabel
+            // 
+            this.TimerLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TimerLabel.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.TimerLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TimerLabel.Location = new System.Drawing.Point(12, 530);
+            this.TimerLabel.Name = "TimerLabel";
+            this.TimerLabel.Size = new System.Drawing.Size(860, 22);
+            this.TimerLabel.TabIndex = 194;
+            this.TimerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // InventoryAdmission
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 561);
+            this.Controls.Add(this.TimerLabel);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label11);
@@ -290,12 +293,11 @@ namespace KartSkills
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonSave);
-            this.Controls.Add(this.TimerLabel);
             this.Controls.Add(this.dataGridTimer);
             this.Controls.Add(this.labelCity);
             this.Controls.Add(this.labelKartName);
             this.Controls.Add(this.dataKartName);
-            this.Name = "AdmissionInv";
+            this.Name = "InventoryAdmission";
             this.Text = "AdmissionInv";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridTimer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataKartName)).EndInit();
@@ -310,7 +312,6 @@ namespace KartSkills
         private System.Windows.Forms.Timer TimerStart;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonSave;
-        private System.Windows.Forms.Label TimerLabel;
         private System.Windows.Forms.DataGridView dataGridTimer;
         private System.Windows.Forms.Label labelCity;
         private System.Windows.Forms.Label labelKartName;
@@ -324,5 +325,6 @@ namespace KartSkills
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button buttonCancel;
+        private System.Windows.Forms.Label TimerLabel;
     }
 }

@@ -35,7 +35,6 @@ namespace KartSkills
             this.label1 = new System.Windows.Forms.Label();
             this.buttonBack = new System.Windows.Forms.Button();
             this.TimerStart = new System.Windows.Forms.Timer(this.components);
-            this.TimerLabel = new System.Windows.Forms.Label();
             this.dataGridTimer = new System.Windows.Forms.DataGridView();
             this.labelCity = new System.Windows.Forms.Label();
             this.labelKartName = new System.Windows.Forms.Label();
@@ -45,6 +44,7 @@ namespace KartSkills
             this.labelAge = new System.Windows.Forms.Label();
             this.buttoLogOut = new System.Windows.Forms.Button();
             this.dataGridViewResult = new System.Windows.Forms.DataGridView();
+            this.TimerLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridTimer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataKartName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResult)).BeginInit();
@@ -108,17 +108,6 @@ namespace KartSkills
             this.TimerStart.Enabled = true;
             this.TimerStart.Interval = 1000;
             this.TimerStart.Tick += new System.EventHandler(this.TimerStart_Tick);
-            // 
-            // TimerLabel
-            // 
-            this.TimerLabel.AutoSize = true;
-            this.TimerLabel.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.TimerLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TimerLabel.Location = new System.Drawing.Point(143, 530);
-            this.TimerLabel.Name = "TimerLabel";
-            this.TimerLabel.Size = new System.Drawing.Size(61, 22);
-            this.TimerLabel.TabIndex = 50;
-            this.TimerLabel.Text = "label3";
             // 
             // dataGridTimer
             // 
@@ -223,11 +212,25 @@ namespace KartSkills
             this.dataGridViewResult.Size = new System.Drawing.Size(860, 245);
             this.dataGridViewResult.TabIndex = 82;
             // 
+            // TimerLabel
+            // 
+            this.TimerLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TimerLabel.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.TimerLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TimerLabel.Location = new System.Drawing.Point(12, 530);
+            this.TimerLabel.Name = "TimerLabel";
+            this.TimerLabel.Size = new System.Drawing.Size(860, 22);
+            this.TimerLabel.TabIndex = 83;
+            this.TimerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // MyResults
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 561);
+            this.Controls.Add(this.TimerLabel);
             this.Controls.Add(this.dataGridViewResult);
             this.Controls.Add(this.buttoLogOut);
             this.Controls.Add(this.labelAge);
@@ -237,7 +240,6 @@ namespace KartSkills
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonBack);
-            this.Controls.Add(this.TimerLabel);
             this.Controls.Add(this.dataGridTimer);
             this.Controls.Add(this.labelCity);
             this.Controls.Add(this.labelKartName);
@@ -259,7 +261,6 @@ namespace KartSkills
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Timer TimerStart;
-        private System.Windows.Forms.Label TimerLabel;
         private System.Windows.Forms.DataGridView dataGridTimer;
         private System.Windows.Forms.Label labelCity;
         private System.Windows.Forms.Label labelKartName;
@@ -269,5 +270,6 @@ namespace KartSkills
         private System.Windows.Forms.Label labelAge;
         private System.Windows.Forms.Button buttoLogOut;
         private System.Windows.Forms.DataGridView dataGridViewResult;
+        private System.Windows.Forms.Label TimerLabel;
     }
 }

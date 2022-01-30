@@ -44,7 +44,6 @@ namespace KartSkills
             this.label1 = new System.Windows.Forms.Label();
             this.buttonBack = new System.Windows.Forms.Button();
             this.TimerStart = new System.Windows.Forms.Timer(this.components);
-            this.TimerLabel = new System.Windows.Forms.Label();
             this.dataGridTimer = new System.Windows.Forms.DataGridView();
             this.labelCity = new System.Windows.Forms.Label();
             this.labelKartName = new System.Windows.Forms.Label();
@@ -60,6 +59,7 @@ namespace KartSkills
             this.comboBoxCountry = new System.Windows.Forms.ComboBox();
             this.pictureBoxPhoto = new System.Windows.Forms.PictureBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.TimerLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridTimer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataKartName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPhoto)).BeginInit();
@@ -223,17 +223,6 @@ namespace KartSkills
             this.TimerStart.Interval = 1000;
             this.TimerStart.Tick += new System.EventHandler(this.TimerStart_Tick);
             // 
-            // TimerLabel
-            // 
-            this.TimerLabel.AutoSize = true;
-            this.TimerLabel.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.TimerLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TimerLabel.Location = new System.Drawing.Point(143, 530);
-            this.TimerLabel.Name = "TimerLabel";
-            this.TimerLabel.Size = new System.Drawing.Size(61, 22);
-            this.TimerLabel.TabIndex = 50;
-            this.TimerLabel.Text = "label3";
-            // 
             // dataGridTimer
             // 
             this.dataGridTimer.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
@@ -382,11 +371,25 @@ namespace KartSkills
             this.dateTimePicker1.Size = new System.Drawing.Size(180, 29);
             this.dateTimePicker1.TabIndex = 88;
             // 
-            // RegRacer
+            // TimerLabel
+            // 
+            this.TimerLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TimerLabel.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.TimerLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TimerLabel.Location = new System.Drawing.Point(12, 530);
+            this.TimerLabel.Name = "TimerLabel";
+            this.TimerLabel.Size = new System.Drawing.Size(860, 22);
+            this.TimerLabel.TabIndex = 89;
+            this.TimerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // RacerRagistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 561);
+            this.Controls.Add(this.TimerLabel);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.pictureBoxPhoto);
             this.Controls.Add(this.comboBoxCountry);
@@ -411,12 +414,11 @@ namespace KartSkills
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonBack);
-            this.Controls.Add(this.TimerLabel);
             this.Controls.Add(this.dataGridTimer);
             this.Controls.Add(this.labelCity);
             this.Controls.Add(this.labelKartName);
             this.Controls.Add(this.dataKartName);
-            this.Name = "RegRacer";
+            this.Name = "RacerRagistration";
             this.Text = "RegRacer";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridTimer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataKartName)).EndInit();
@@ -442,7 +444,6 @@ namespace KartSkills
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Timer TimerStart;
-        private System.Windows.Forms.Label TimerLabel;
         private System.Windows.Forms.DataGridView dataGridTimer;
         private System.Windows.Forms.Label labelCity;
         private System.Windows.Forms.Label labelKartName;
@@ -458,5 +459,6 @@ namespace KartSkills
         private System.Windows.Forms.ComboBox comboBoxCountry;
         private System.Windows.Forms.PictureBox pictureBoxPhoto;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label TimerLabel;
     }
 }

@@ -34,12 +34,12 @@ namespace KartSkills
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.TimerStart = new System.Windows.Forms.Timer(this.components);
-            this.TimerLabel = new System.Windows.Forms.Label();
             this.dataGridTimer = new System.Windows.Forms.DataGridView();
             this.labelCity = new System.Windows.Forms.Label();
             this.labelKartName = new System.Windows.Forms.Label();
             this.dataKartName = new System.Windows.Forms.DataGridView();
             this.buttoLogOut = new System.Windows.Forms.Button();
+            this.TimerLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridTimer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataKartName)).BeginInit();
             this.SuspendLayout();
@@ -87,17 +87,6 @@ namespace KartSkills
             this.TimerStart.Enabled = true;
             this.TimerStart.Interval = 1000;
             this.TimerStart.Tick += new System.EventHandler(this.TimerStart_Tick);
-            // 
-            // TimerLabel
-            // 
-            this.TimerLabel.AutoSize = true;
-            this.TimerLabel.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.TimerLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TimerLabel.Location = new System.Drawing.Point(143, 530);
-            this.TimerLabel.Name = "TimerLabel";
-            this.TimerLabel.Size = new System.Drawing.Size(61, 22);
-            this.TimerLabel.TabIndex = 50;
-            this.TimerLabel.Text = "label3";
             // 
             // dataGridTimer
             // 
@@ -158,21 +147,34 @@ namespace KartSkills
             this.buttoLogOut.UseVisualStyleBackColor = false;
             this.buttoLogOut.Click += new System.EventHandler(this.buttoLogOut_Click);
             // 
-            // ThankReg
+            // TimerLabel
+            // 
+            this.TimerLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TimerLabel.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.TimerLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TimerLabel.Location = new System.Drawing.Point(12, 530);
+            this.TimerLabel.Name = "TimerLabel";
+            this.TimerLabel.Size = new System.Drawing.Size(860, 22);
+            this.TimerLabel.TabIndex = 70;
+            this.TimerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // RegistrationEnd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 561);
+            this.Controls.Add(this.TimerLabel);
             this.Controls.Add(this.buttoLogOut);
             this.Controls.Add(this.buttonOK);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.TimerLabel);
             this.Controls.Add(this.dataGridTimer);
             this.Controls.Add(this.labelCity);
             this.Controls.Add(this.labelKartName);
             this.Controls.Add(this.dataKartName);
-            this.Name = "ThankReg";
+            this.Name = "RegistrationEnd";
             this.Text = "ThankReg";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridTimer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataKartName)).EndInit();
@@ -187,11 +189,11 @@ namespace KartSkills
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer TimerStart;
-        private System.Windows.Forms.Label TimerLabel;
         private System.Windows.Forms.DataGridView dataGridTimer;
         private System.Windows.Forms.Label labelCity;
         private System.Windows.Forms.Label labelKartName;
         private System.Windows.Forms.DataGridView dataKartName;
         private System.Windows.Forms.Button buttoLogOut;
+        private System.Windows.Forms.Label TimerLabel;
     }
 }
